@@ -1,0 +1,46 @@
+# votronic_device.yaml
+# Füge diese Zeile in deine Haupt-yaml-Datei ein:
+# packages: !include packages/votronic_device.yaml
+
+# Die folgenden Einstellungen müssen an deine Hardware angepasst werden
+# uart:
+#   tx_pin: GPIOxx
+#   rx_pin: GPIOyy
+#   baud_rate: 1000
+
+external_components:
+  - source: ./votronic
+    components:
+      - votronic
+
+uart:
+  id: uart_bus
+  baud_rate: 1000
+  rx_pin: GPIO16 # Passe dies an deinen ESP32 RX-Pin an
+  tx_pin: GPIO17 # Nicht verwendet, aber oft benötigt
+
+custom_component:
+  - id: votronic_component
+    lambda: |-
+      auto my_votronic_component = new votronic::VotronicComponent(uart::global_uart_bus);
+      App.register_component(my_votronic_component);
+      return {my_votronic_component};
+    sensors:
+      - id: solar_voltage
+        name: "Votronic Solarspannung"
+        unit_of_measurement: V
+        accuracy_decimals: 2
+        device_class: voltage
+        state_class: measurement
+      - id: solar_current
+        name: "Votronic Solarstrom"
+        unit_of_measurement: A
+        accuracy_decimals: 2
+        device_class: current
+        state_class: measurement
+      - id: battery_voltage
+        name: "Votronic Bordbatterie Spannung"
+        unit_of_measurement: V
+        accuracy_decimals: 2
+        device_class: voltage
+        state_class: measurement
