@@ -5,6 +5,7 @@ Diese ESPHome Custom Component ermöglicht das Auslesen von Daten aus Votronic-L
 In Entwicklung! Noch nicht einsatzbereit.
 
 Dies ist der theoretische Aufbau einer Lösung, um die Werte aus einem Votronic MPP430 auszulesen.
+Mitarbeit gerne erwünscht.
 Ich übernehme keine Haftung.
 
 ## Funktionen
