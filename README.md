@@ -15,9 +15,13 @@ Ich übernehme keine Haftung.
 - Bietet Sensoren für Bordbatteriespannung, Solarspannung und Solarstrom.
 - Validiert die Checksumme der Datenpakete.
 
-  ![Steckerbelegung der Votronic-Schnittstelle](images/anschluss.png)
+  ![Steckerbelegung der Votronic-Schnittstelle](images/anschluss.jpg
 
 ## Voraussetzungen
+
+Spannung des MPP430 "Display-Link"-Schnittstelle an Pin 3 (+5V) und Pin 6 (GND) der RJ11-Buchse messen
+Sollten 3.3 V sein
+bei 5 V Logic Level Shifter verwenden zwischen TXD und RX
 
 ### Hardware
 
