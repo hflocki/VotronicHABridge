@@ -15,7 +15,7 @@ Ich übernehme keine Haftung.
 - Bietet Sensoren für Bordbatteriespannung, Solarspannung und Solarstrom.
 - Validiert die Checksumme der Datenpakete.
 
-  ![Steckerbelegung der Votronic-Schnittstelle](images/anschluss.jpg
+  ![Steckerbelegung der Votronic-Schnittstelle](images/anschluss.jpg)
 
 ## Voraussetzungen
 
