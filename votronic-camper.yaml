@@ -1,0 +1,15 @@
+esphome:
+  name: votronic-camper
+  platform: ESP32
+  board: nodemcu-32s
+
+wifi:
+  ssid: "Dein WLAN-Name"
+  password: "Dein WLAN-Passwort"
+
+ota:
+api:
+
+# rx_pin und tx_pin in packages/votronic_device.yaml anpassen 
+packages:
+  !include packages/votronic_device.yaml
