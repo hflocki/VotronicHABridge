@@ -3,6 +3,14 @@ esphome:
   platform: ESP32
   board: nodemcu-32s
 
+# Verweise auf deine lokale Komponente
+external_components:
+  - source:
+      type: local
+      path: ./components
+    components:
+      - votronic
+
 wifi:
   ssid: "Dein WLAN-Name"
   password: "Dein WLAN-Passwort"
@@ -10,6 +18,6 @@ wifi:
 ota:
 api:
 
-# rx_pin und tx_pin in packages/votronic_device.yaml anpassen 
+# Binde deine Paketdatei ein, die deine Sensoren konfiguriert
 packages:
   !include packages/votronic_device.yaml
