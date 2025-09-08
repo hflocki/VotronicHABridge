@@ -41,8 +41,7 @@ bei 5 V Logic Level Shifter verwenden zwischen TXD und RX
 
 ## Installation und Einrichtung
 
-1.  Erstelle die oben genannte Ordnerstruktur in deinem ESPHome-Konfigurationsordner.
-2.  Kopiere die Dateien dorthin
+1.  Füge die beiden Ordner "components" und "packages" mit Inhalten in den esphome Ordner ein. 
 3.  Passe in der`packages/votronic_device.yaml` den rx_pin und tx_pin an.
 4.  Passe die `votronic-camper.yaml` Datei an deine ESP32-Hardware an.
 5.  Kompiliere und lade die Firmware auf deinen ESP32.
