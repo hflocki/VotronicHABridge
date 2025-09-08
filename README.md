@@ -15,6 +15,8 @@ Ich übernehme keine Haftung.
 - Bietet Sensoren für Bordbatteriespannung, Solarspannung und Solarstrom.
 - Validiert die Checksumme der Datenpakete.
 
+  ![Steckerbelegung der Votronic-Schnittstelle](images/anschluss.png)
+
 ## Voraussetzungen
 
 ### Hardware
@@ -25,6 +27,7 @@ Ich übernehme keine Haftung.
     - Votronic `GND` Pin -> ESP32 `GND` Pin
   
 ![Schematischer Aufbau der Votronic-Schnittstelle](images/aufbau.png)
+
 
 ### Software
 
