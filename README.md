@@ -1,10 +1,11 @@
 # Votronic ESPHome Custom Component
-
-## Projekt Status 
-In Entwicklung! Not ready yet
-Theoretischer Aufbau einer Lösung um die Werte aus einem Votronic MPP430 auszulesen
-
 Diese ESPHome Custom Component ermöglicht das Auslesen von Daten aus Votronic-Ladereglern (z.B. MPP-Serie) über die "Display-Link"-Schnittstelle und die Übertragung an Home Assistant.
+
+## Projekt Status 🚧
+In Entwicklung! Noch nicht einsatzbereit.
+
+Dies ist der theoretische Aufbau einer Lösung, um die Werte aus einem Votronic MPP430 auszulesen.
+Ich übernehme keine Haftung.
 
 ## Funktionen
 
